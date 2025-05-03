@@ -1,0 +1,57 @@
+# Deploying to Vercel
+
+## Prerequisites
+- GitHub account
+- Vercel account (you can sign up with your GitHub account)
+
+## Option 1: Deploy directly from GitHub
+
+1. **Push your code to GitHub**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/yourusername/aesops-visualization-game.git
+   git push -u origin main
+   ```
+
+2. **Deploy on Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New..." → "Project"
+   - Import your GitHub repository
+   - Keep the default settings
+   - Click "Deploy"
+
+## Option 2: Deploy with Vercel CLI
+
+1. **Install Vercel CLI**
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy the project**
+   ```bash
+   vercel
+   ```
+   - Follow the prompts to link to your Vercel account
+   - Set up the project with default settings
+
+3. **Deploy to production**
+   ```bash
+   vercel --prod
+   ```
+
+## Updating Your Deployment
+
+Whenever you make changes to your project, you can push them to GitHub and Vercel will automatically redeploy, or run:
+
+```bash
+vercel --prod
+```
+
+## Important Notes
+
+- The deployed site will have a URL like: `aesops-visualization-game.vercel.app`
+- You can add a custom domain in your Vercel project settings
+- Vercel automatically optimizes images, JavaScript, and CSS for performance
+- The free tier of Vercel is sufficient for this project

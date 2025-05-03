@@ -1,0 +1,34 @@
+# Aesop's Fable Visualization Game - Project Structure
+
+## File Structure
+```
+aesops-visualization-game/
+├── package.json
+├── next.config.js
+├── .gitignore
+├── README.md
+├── public/
+│   └── favicon.ico
+└── src/
+    ├── pages/
+    │   ├── _app.js
+    │   ├── _document.js
+    │   └── index.js
+    └── components/
+        └── AesopGame.jsx
+```
+
+## Installation Instructions
+1. Create a new directory: `mkdir aesops-visualization-game`
+2. Navigate to it: `cd aesops-visualization-game`
+3. Initialize a new Next.js project: `npx create-next-app@latest .`
+   - When prompted, select:
+     - TypeScript: No
+     - ESLint: Yes
+     - Tailwind CSS: Yes
+     - src/ directory: Yes
+     - App Router: No (we'll use Pages Router for simplicity)
+4. Create the component structure as shown above
+5. Copy the code for each file below
+6. Run locally with: `npm run dev`
+7. Deploy to Vercel: `npx vercel`
